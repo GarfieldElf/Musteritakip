@@ -14,40 +14,36 @@
         </Button>
 
         <Label Content="Müşteri Adı:"
-         Width="100" Height="30" Margin="257,42,443,362" RenderTransformOrigin="0.555,0.703" ></Label>
-        <TextBox x:Name="musteriadi" Height="30" Width="100"  
-         VerticalAlignment="Top"  
-         HorizontalAlignment="Left" Margin="362,274,0,0">
-        </TextBox>
+         Width="100" Height="30" Margin="250,39,450,365" RenderTransformOrigin="0.555,0.703" ></Label>
+        <TextBox VerticalContentAlignment="Center"
+        x:Name="musteriadi" Height="30" Width="100" Margin="350,202,350,202"
+        />
 
 
         <Label Content="Müşteri Soyadı:"
-         Width="100" Height="30" Margin="257,124,443,280"></Label>
-        <TextBox x:Name="musterisoyadi" Height="30" Width="100"  
-         VerticalAlignment="Top"  
-         HorizontalAlignment="Left" Margin="362,192,0,0">
-        </TextBox>
+         Width="100" Height="30" Margin="250,124,450,280"></Label>
+        <TextBox VerticalContentAlignment="Center"
+         x:Name="musterisoyadi" Height="30" Width="100" Margin="350,274,350,130" RenderTransformOrigin="0.33,0.564"
+         />
 
 
         <Label Content="Müşteri Telefon:"
-         Width="100" Height="30" Margin="257,192,443,212"></Label>
-        <TextBox x:Name="musteritel" Height="30" Width="100"  
-         VerticalAlignment="Top"  
-        HorizontalAlignment="Left" Margin="362,124,0,0">
-        </TextBox>
+         Width="100" Height="30" Margin="250,202,450,202"></Label>
+        <TextBox VerticalContentAlignment="Center"
+         x:Name="musteritel" Height="30" Width="100" Margin="350,124,350,280"
+         />
 
 
         <Label Content="Müşteri E-posta:"
-         Width="100" Height="30" Margin="257,274,443,130"></Label>
-        <TextBox x:Name="musterieposta" Height="30" Width="100"  
-         VerticalAlignment="Top"  
-         HorizontalAlignment="Left" Margin="362,42,0,0">
-        </TextBox>
+         Width="100" Height="30" Margin="250,271,450,133"></Label>
+        <TextBox VerticalContentAlignment="Center"
+                 x:Name="musterieposta" Height="30" Width="100" Margin="350,42,350,362"
+                 />
 
         <Button x:Name="musteriyiekle" Height="30" Width="100"  
         Content="Müşteriyi Ekle"
-         VerticalAlignment="Top"  
-        HorizontalAlignment="Left" Margin="362,355,0,0">
+         VerticalAlignment="Center"  
+         Margin="350,360,350,0">
         </Button>
 
 
