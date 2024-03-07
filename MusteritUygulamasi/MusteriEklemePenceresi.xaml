@@ -1,0 +1,55 @@
+﻿<Window x:Class="MusteritUygulamasi.MusteriEklemePenceresi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusteritUygulamasi"
+        mc:Ignorable="d"
+        Title="MusteriEklemePenceresi" Height="450" Width="800" WindowState="Maximized">
+    <Grid>
+        <Button x:Name="Oncekisayfa" Height="30" Width="100"  
+            Content="Geri"
+            Margin="0,10,10,0" VerticalAlignment="Top"  
+            HorizontalAlignment="Right">
+        </Button>
+
+        <Label Content="Müşteri Adı:"
+         Width="100" Height="30" Margin="257,42,443,362" RenderTransformOrigin="0.555,0.703" ></Label>
+        <TextBox x:Name="musteriadi" Height="30" Width="100"  
+         VerticalAlignment="Top"  
+         HorizontalAlignment="Left" Margin="362,274,0,0">
+        </TextBox>
+
+
+        <Label Content="Müşteri Soyadı:"
+         Width="100" Height="30" Margin="257,124,443,280"></Label>
+        <TextBox x:Name="musterisoyadi" Height="30" Width="100"  
+         VerticalAlignment="Top"  
+         HorizontalAlignment="Left" Margin="362,192,0,0">
+        </TextBox>
+
+
+        <Label Content="Müşteri Telefon:"
+         Width="100" Height="30" Margin="257,192,443,212"></Label>
+        <TextBox x:Name="musteritel" Height="30" Width="100"  
+         VerticalAlignment="Top"  
+        HorizontalAlignment="Left" Margin="362,124,0,0">
+        </TextBox>
+
+
+        <Label Content="Müşteri E-posta:"
+         Width="100" Height="30" Margin="257,274,443,130"></Label>
+        <TextBox x:Name="musterieposta" Height="30" Width="100"  
+         VerticalAlignment="Top"  
+         HorizontalAlignment="Left" Margin="362,42,0,0">
+        </TextBox>
+
+        <Button x:Name="musteriyiekle" Height="30" Width="100"  
+        Content="Müşteriyi Ekle"
+         VerticalAlignment="Top"  
+        HorizontalAlignment="Left" Margin="362,355,0,0">
+        </Button>
+
+
+    </Grid>
+</Window>
