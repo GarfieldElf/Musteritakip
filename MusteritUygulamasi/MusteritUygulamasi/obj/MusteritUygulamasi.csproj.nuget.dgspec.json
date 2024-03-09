@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj": {}
+    "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj": {
+    "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
+        "projectUniqueName": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
         "projectName": "MusteritUygulamasi",
-        "projectPath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
+        "projectPath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
         "packagesPath": "C:\\Users\\elfay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\obj\\",
+        "outputPath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

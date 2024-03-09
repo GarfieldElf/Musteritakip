@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qgbuh+q+Sh1XjOY7ugp4rVsQWsBI1rpYwlgPVs5GxfsK2AikIE6eC76At96J4ESo7C1Ux6q18+SQ7hiOAEY6EQ==",
+  "dgSpecHash": "QO/v2ivxGiT0cl9G5Gg38uDuiDQOIVrCpgehHOCAJC2xKborqJEdezBwfpc9A1LXeyc1BJKuBrBMKXS+R63FZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
+  "projectFilePath": "C:\\Users\\elfay\\Desktop\\wpf uygulamaları\\Musteritakip\\MusteritUygulamasi\\MusteritUygulamasi\\MusteritUygulamasi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elfay\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\elfay\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
