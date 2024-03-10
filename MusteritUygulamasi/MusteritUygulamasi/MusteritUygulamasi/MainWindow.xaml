@@ -1,0 +1,74 @@
+﻿<Window x:Class="MusteritUygulamasi.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusteritUygulamasi"
+        mc:Ignorable="d"
+        Title="MusteriTakip" MinHeight="450" MinWidth="800" WindowState="Maximized">
+    <Grid>
+        <TextBlock Text="{Binding Path= Message}"></TextBlock>
+
+        <Label Content="Müşteri Telefon:"
+  Width="100" Height="30" Margin="232,57,595,347"></Label>
+        <TextBox VerticalContentAlignment="Center" Text="{Binding Path = CurrentMusteri.MusteriTel, Mode=TwoWay}"
+ x:Name="musteritelTextBox" Height="30" Width="100" Margin="337,57,490,347"
+ />
+
+        <Label Content="Müşteri E-posta:"
+       Width="100" Height="30" Margin="232,12,595,392"></Label>
+        <TextBox VerticalContentAlignment="Top" Text="{Binding Path = CurrentMusteri.MusteriEposta, Mode=TwoWay}"
+  x:Name="musteriepostaTextBox" Height="30" Width="100" Margin="337,12,490,392" RenderTransformOrigin="0.33,0.564"
+  />
+
+        <Label Content="Müşteri Soyadı:"
+  Width="100" Height="30" Margin="10,47,817,357" RenderTransformOrigin="0.342,-1.951"></Label>
+        <TextBox VerticalContentAlignment="Center" Text="{Binding Path = CurrentMusteri.MusteriSoyadi, Mode=TwoWay}"
+  x:Name="musterisoyadiTextBox" Height="30" Width="100" Margin="110,47,717,357"
+  />
+
+        <Label Content="Müşteri Adı:"
+        Width="100" Height="30" Margin="10,12,817,392" RenderTransformOrigin="0.555,0.703" ></Label>
+        <TextBox VerticalContentAlignment="Center" Text="{Binding Path = CurrentMusteri.MusteriAdi, Mode=TwoWay}"
+          x:Name="musteriadiTextBox" Height="30" Width="100" Margin="110,10,717,394"
+ />
+
+        <Button x:Name="musteriyiekle" Height="30" Width="100"  
+  Content="Müşteriyi Ekle"
+  Command="{Binding Path = SaveCommand }"
+  Margin="182,103,645,301">
+        </Button>
+
+        <TextBox Name="MusteriFiltrele" Height="30" Width="200"
+                 HorizontalAlignment="Right" VerticalAlignment="Top"
+                 Margin="10,10,120,10"
+                 >
+        </TextBox>
+
+        <Button x:Name="musteriara" Height="30" Width="100"  
+            Content="Müşteriyi Ara"
+            Margin="10,10,10,0" VerticalAlignment="Top"  
+            HorizontalAlignment="Right">
+        </Button>
+
+        <ListView Name="MusteriList" Height="195" ItemsSource="{Binding Path = MusterilerList}" Margin="0,159,0,80">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="MusteriId" Width="150" DisplayMemberBinding="{Binding Path= MusteriId}"></GridViewColumn>
+                    <GridViewColumn Header="Müşteri Adı" Width="200" DisplayMemberBinding="{Binding Path = MusteriAdi}"></GridViewColumn>
+                    <GridViewColumn Header="Müşteri Soyadı" Width="200" DisplayMemberBinding="{Binding Path = MusteriSoyadi}"></GridViewColumn>
+                    <GridViewColumn Header="Müşteri Telefon" Width="200" DisplayMemberBinding="{Binding Path = MusteriTel}"></GridViewColumn>
+                    <GridViewColumn Header="Müşteri Eposta" Width="150" DisplayMemberBinding="{Binding Path = MusteriEposta}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="musteriyisil" Height="30" Width="100"  
+         Content="Müşteriyi Sil"
+         Margin="10,0,0,50" VerticalAlignment="Bottom" 
+         HorizontalAlignment="Left">
+        </Button>
+
+    </Grid>
+
+</Window>
