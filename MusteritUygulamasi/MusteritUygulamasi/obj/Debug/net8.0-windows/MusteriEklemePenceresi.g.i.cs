@@ -93,7 +93,7 @@ namespace MusteritUygulamasi {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MusteritUygulamasi;component/musterieklemepenceresi.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MusteritUygulamasi;V1.0.0.0;component/musterieklemepenceresi.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MusteriEklemePenceresi.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

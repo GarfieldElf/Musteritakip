@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using MusteritUygulamasi.Model;
+
 
 namespace MusteritUygulamasi
 {
@@ -13,8 +13,7 @@ namespace MusteritUygulamasi
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            DatabaseFacade facade = new DatabaseFacade(new MusteriContext());
-            facade.EnsureCreated();
+           
            
         }
 

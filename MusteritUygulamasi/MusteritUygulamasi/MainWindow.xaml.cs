@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MusteritUygulamasi.Model;
+using MusteritUygulamasi.Models;
+using MusteritUygulamasi.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,37 +19,17 @@ namespace MusteritUygulamasi
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<Musteri> DatabaseMusteriler { get; private set; } = null!;
+
+        MusteriViewModel ViewModel;
 
         public MainWindow()
         {
             InitializeComponent();
-
+            ViewModel = new MusteriViewModel();
+            this.DataContext = ViewModel;
         }
 
-        private void Musteri_Click(object sender, EventArgs e)
-        {
-            Hide();
-            new MusteriEklemePenceresi().ShowDialog();
-            ShowDialog();
-
-        }
-
-
-        public void Read()
-        {
-
-            using(MusteriContext context = new MusteriContext())
-            {
-                DatabaseMusteriler = context.Musteriler.ToList();
-                MusteriList.ItemsSource = DatabaseMusteriler;
-            }
-        }
-
-        private void musterigetir_Click(object sender, RoutedEventArgs e)
-        {
-            Read();
-        }
+       
     }
 
 }
