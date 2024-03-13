@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MusteriTakip2.Views"
         mc:Ignorable="d"
-        Title="Musteriler" Height="450" Width="800">
+        Title="Musteriler" Height="450" Width="800" WindowState="Maximized">
     <Grid>
         <ListView Grid.Row="1" ItemsSource="{Binding LstMusteri}">
             <ListView.View>
@@ -43,7 +43,7 @@
             <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="5"></Border>
             <StackPanel Margin="5">
 
-                <Grid Margin="10,200">
+                <Grid Margin="10,150">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                         <ColumnDefinition/>
@@ -57,20 +57,21 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
+                    
                     <Label Grid.Row="0" Grid.Column="0" Content="Müşteri Adı:"/>
-                    <TextBox Grid.Row="0" Grid.Column="1"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Musteriler.MusteriAdi}" />
 
                     <Label Grid.Row="1" Grid.Column="0" Content="Müşteri Soyadı:"/>
-                    <TextBox Grid.Row="1" Grid.Column="1"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Musteriler.MusteriSoyadi}"/>
 
                     <Label Grid.Row="2" Grid.Column="0" Content="Müşteri Telefon:"/>
-                    <TextBox Grid.Row="2" Grid.Column="1"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Musteriler.MusteriTel}" />
 
                     <Label Grid.Row="3" Grid.Column="0" Content="Müşteri Eposta:"/>
-                    <TextBox Grid.Row="3" Grid.Column="1"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Musteriler.MusteriEposta}"/>
 
                 </Grid>
-                <Label Content="Müşteri Ekle" />
+                <Button Command="{Binding AddMusteriCommand }" Content="Müşteri Ekle" />
             </StackPanel>
 
         </Grid>

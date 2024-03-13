@@ -10,5 +10,8 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/musterimodel.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("models/musterimodel.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("e_sqlite3.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("e_sqlite3.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("e_sqlite3.dll")]
 
 

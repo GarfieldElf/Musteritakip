@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Data.Entity.Validation;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -22,14 +23,6 @@ namespace MusteriTakip2.ViewModels
 
         }
 
-        private Musteriler _musteriler;
-
-        public Musteriler Musteriler
-        {
-            get { return _musteriler; }
-            set { _musteriler = value; OnPropertyChanged(nameof(Musteriler)); }
-        }
-
         private ObservableCollection<Musteriler> _lstmusteri;
 
         public ObservableCollection<Musteriler> LstMusteri
@@ -38,6 +31,18 @@ namespace MusteriTakip2.ViewModels
             set { _lstmusteri = value; OnPropertyChanged(nameof(LstMusteri)); }
         }
 
+
+        private Musteriler _musteriler = new Musteriler();
+
+        public Musteriler Musteriler
+        {
+            get { return _musteriler; }
+            set { _musteriler = value; OnPropertyChanged(nameof(Musteriler)); }
+        }
+
+        //----------------------------------------------------------------------------//
+
+
         MusteriEntities musterientities;
 
         public MusteriViewModel()
@@ -45,14 +50,25 @@ namespace MusteriTakip2.ViewModels
             musterientities = new MusteriEntities();
             LoadMusteri();
             DeleteCommand = new Command((s) => true, Delete);
+            AddMusteriCommand = new Command((s) => true, AddMusterii);
+        }
+
+        private void AddMusterii(object obj)
+        {
+            Musteriler.MusteriId = musterientities.Musterilers.Count();
+            musterientities.Musterilers.Add(Musteriler);
+            musterientities.SaveChanges();
+           
+            LstMusteri.Add(Musteriler);
+            Musteriler = new Musteriler();
         }
 
         private void Delete(object obj)
         {
-            var emp = obj as Musteriler;
-            musterientities.Musterilers.Remove(emp);
+            var mst = obj as Musteriler;
+            musterientities.Musterilers.Remove(mst);
             musterientities.SaveChanges();
-            LstMusteri.Remove(emp);
+            LstMusteri.Remove(mst);
         }
 
         private void LoadMusteri()
@@ -61,9 +77,11 @@ namespace MusteriTakip2.ViewModels
         }
         public ICommand DeleteCommand { get; set; }
 
+        public ICommand AddMusteriCommand { get; set; }
+
         class Command : ICommand
         {
-            public Command(Func<object,bool> methodCanExecute,Action<object> methodExecute)
+            public Command(Func<object, bool> methodCanExecute, Action<object> methodExecute)
             {
                 MethodCanExecute = methodCanExecute;
                 MethodExecute = methodExecute;
