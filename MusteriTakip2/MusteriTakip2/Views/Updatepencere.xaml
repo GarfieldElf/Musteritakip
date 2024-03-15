@@ -1,0 +1,56 @@
+﻿<Window x:Class="MusteriTakip2.Views.Updatepencere"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusteriTakip2.Views"
+        mc:Ignorable="d"
+        Title="Updatepencere" MinHeight="450" MinWidth="800" MaxHeight="450" MaxWidth="800">
+    <Grid VerticalAlignment="Center">
+
+        <Grid Grid.Row="1">
+
+
+
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="5"></Border>
+            <StackPanel Margin="5">
+
+                <Grid Margin="10,150" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+
+                    <Label Grid.Row="0" Grid.Column="0" Content="Müşteri Adı:"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding SelectedMusteri.MusteriAdi}" />
+
+                    <Label Grid.Row="1" Grid.Column="0" Content="Müşteri Soyadı:"/>
+                    <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedMusteri.MusteriSoyadi}"/>
+
+                    <Label Grid.Row="2" Grid.Column="0" Content="Müşteri Telefon:"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedMusteri.MusteriTel}" />
+
+                    <Label Grid.Row="3" Grid.Column="0" Content="Müşteri Eposta:"/>
+                    <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedMusteri.MusteriEposta}" />
+
+                    <Button Content="Müşteriyi Güncelle"
+                            Grid.Row="5" Margin="0,10,-1,-30" Grid.Column="1"
+                            />
+                </Grid>
+                <Button  Content="Müşteriyi Güncelle"  />
+            </StackPanel>
+
+        </Grid>
+
+    </Grid>
+</Window>

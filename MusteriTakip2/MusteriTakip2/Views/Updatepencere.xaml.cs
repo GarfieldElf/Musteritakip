@@ -11,26 +11,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using MusteriTakip2.ViewModels;
 
 namespace MusteriTakip2.Views
 {
     /// <summary>
-    /// Musteriler.xaml etkileşim mantığı
+    /// Updatepencere.xaml etkileşim mantığı
     /// </summary>
-    public partial class Musteriler : Window
+    public partial class Updatepencere : Window
     {
-        public Musteriler()
+        public Updatepencere()
         {
             InitializeComponent();
-            DataContext = new MusteriViewModel();
-        }
-
-        private void BtnUpdatePage_Click(object sender, RoutedEventArgs e)
-        {
-            Updatepencere updatepage = new Updatepencere();
-            updatepage.Show();
-
         }
     }
 }

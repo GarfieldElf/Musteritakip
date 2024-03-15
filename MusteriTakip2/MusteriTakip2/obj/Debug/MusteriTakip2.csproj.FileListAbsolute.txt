@@ -136,3 +136,6 @@ C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\bin\Debug\S
 C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\obj\Debug\MusteriTakip2.csproj.SuggestedBindingRedirects.cache
 C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\obj\Debug\MusteriTakip2.exe.config
+C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\obj\Debug\Views\Updatepencere.g.cs
+C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\obj\Debug\Views\Updatepencere.baml
+C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\obj\Debug\GeneratedInternalTypeHelper.g.cs

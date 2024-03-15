@@ -118,6 +118,9 @@
     <Compile Include="Views\Musteriler.xaml.cs">
       <DependentUpon>Musteriler.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Updatepencere.xaml.cs">
+      <DependentUpon>Updatepencere.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -131,6 +134,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\Musteriler.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Updatepencere.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

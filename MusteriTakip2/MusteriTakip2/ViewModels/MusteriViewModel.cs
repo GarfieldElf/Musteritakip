@@ -40,6 +40,14 @@ namespace MusteriTakip2.ViewModels
             set { _musteriler = value; OnPropertyChanged(nameof(Musteriler)); }
         }
 
+        private Musteriler _selectedMusteri;
+
+        public Musteriler SelectedMusteri
+        {
+            get { return _selectedMusteri; }
+            set { _selectedMusteri = value; OnPropertyChanged(nameof(SelectedMusteri)); }
+        }
+
         //----------------------------------------------------------------------------//
 
 
@@ -51,6 +59,20 @@ namespace MusteriTakip2.ViewModels
             LoadMusteri();
             DeleteCommand = new Command((s) => true, Delete);
             AddMusteriCommand = new Command((s) => true, AddMusterii);
+            UpdateCommand = new Command((s) => true, Update);
+            UpdateMusteriCommand = new Command((s) => true, UpdateMusteri);
+        }
+
+        private void Update(object obj)
+        {
+            SelectedMusteri = obj as Musteriler;
+        }
+
+        private void UpdateMusteri(object obj)
+        {
+            musterientities.SaveChanges();
+            SelectedMusteri = new Musteriler();
+
         }
 
         private void AddMusterii(object obj)
@@ -75,9 +97,10 @@ namespace MusteriTakip2.ViewModels
         {
             LstMusteri = new ObservableCollection<Musteriler>(musterientities.Musterilers);
         }
-        public ICommand DeleteCommand { get; set; }
-
+        public ICommand DeleteCommand { get; set; } 
         public ICommand AddMusteriCommand { get; set; }
+        public ICommand UpdateCommand { get; set; }
+        public ICommand UpdateMusteriCommand { get; set; }
 
         class Command : ICommand
         {
