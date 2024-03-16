@@ -26,11 +26,5 @@ namespace MusteriTakip2.Views
             DataContext = new MusteriViewModel();
         }
 
-        private void BtnUpdatePage_Click(object sender, RoutedEventArgs e)
-        {
-            Updatepencere updatepage = new Updatepencere();
-            updatepage.Show();
-
-        }
     }
 }

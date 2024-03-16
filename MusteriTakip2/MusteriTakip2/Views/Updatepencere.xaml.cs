@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MusteriTakip2.ViewModels;
 
 namespace MusteriTakip2.Views
 {
@@ -22,6 +23,7 @@ namespace MusteriTakip2.Views
         public Updatepencere()
         {
             InitializeComponent();
+            DataContext = new MusteriViewModel();
         }
     }
 }
