@@ -8,6 +8,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Input;
 
 namespace MusteriTakip2.ViewModels
@@ -50,17 +52,52 @@ namespace MusteriTakip2.ViewModels
 
         //----------------------------------------------------------------------------//
 
+        private string filteredMusteri = string.Empty;
+
+        public string FilteredMusteri
+        {
+            get { return filteredMusteri; }
+            set 
+            {
+               filteredMusteri = value; OnPropertyChanged(nameof(filteredMusteri));
+               // MusteriCollection.Filter = FilterMusteribyName;
+                                   
+            }
+        }
+
+        private ICollectionView _mustericollection;
+
+        public ICollectionView MusteriCollection
+        {
+            get { return _mustericollection; }
+            set { _mustericollection = value; }
+        }
+
+
+
 
         MusteriEntities musterientities;
 
         public MusteriViewModel()
         {
+            MusteriCollection = CollectionViewSource.GetDefaultView(LstMusteri);
             musterientities = new MusteriEntities();
-            LoadMusteri();
+        
             DeleteCommand = new Command((s) => true, Delete);
             AddMusteriCommand = new Command((s) => true, AddMusterii);
             UpdateCommand = new Command((s) => true, Update);
             UpdateMusteriCommand = new Command((s) => true, UpdateMusteri);
+
+            // MusteriCollection.Filter = FilterMusteribyName;
+
+            LoadMusteri();
+        }
+
+        private bool FilterMusteribyName(object mstr) //!!!!
+        {
+            var mstrdetay = mstr as Musteriler;
+            return mstrdetay != null && mstrdetay.MusteriAdi.Contains(FilteredMusteri);
+           
         }
 
         private void Update(object obj)

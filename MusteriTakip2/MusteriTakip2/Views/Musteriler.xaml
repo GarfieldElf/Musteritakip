@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Musteriler" Height="450" Width="800" WindowState="Maximized">
     <Grid>
-        <ListView Grid.Row="1" ItemsSource="{Binding LstMusteri}">
+        <ListView Grid.Row="1" ItemsSource="{Binding LstMusteri }">
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
@@ -50,8 +50,8 @@
 
                 <Grid Margin="10,100">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
 
                     <Grid.RowDefinitions>
@@ -62,11 +62,13 @@
                         <RowDefinition/>
                         <RowDefinition/>
                         <RowDefinition/>
-                        <RowDefinition/>
                     </Grid.RowDefinitions>
 
+                    <TextBox Text="{Binding FilteredMusteri,UpdateSourceTrigger=PropertyChanged}" Margin="94,-53,0,63" Grid.ColumnSpan="2"/>
+                
 
-                    <Label Grid.Row="0" Grid.Column="0" Content="Müşteri Adı:"/>
+
+                    <Label Grid.Column="0" Content="Müşteri Adı:" Margin="0,-3,185,23" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
                     <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Musteriler.MusteriAdi}" />
 
                     <Label Grid.Row="1" Grid.Column="0" Content="Müşteri Soyadı:"/>
@@ -78,7 +80,7 @@
                     <Label Grid.Row="3" Grid.Column="0" Content="Müşteri Eposta:"/>
                     <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Musteriler.MusteriEposta}"/>
 
-                    <Button Command="{Binding AddMusteriCommand }" Content="Müşteri Ekle" Grid.ColumnSpan="1" Margin="0,10,184,-36" Grid.Row="4" Grid.Column="1" />
+                    <Button Command="{Binding AddMusteriCommand }" Content="Müşteri Ekle" Margin="0,10,150,-36" Grid.Row="5" Grid.Column="1" />
 
 
 
@@ -94,9 +96,7 @@
                     <Label Grid.Row="6" Grid.Column="0" Content="Müşteri Eposta:" Grid.ColumnSpan="2" Margin="1,132,184,-158"/>
                     <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding SelectedMusteri.MusteriEposta}" Margin="0,127,0,-153"/>
 
-                    <Button Command="{Binding UpdateMusteriCommand }" Content="Müşteriyi Güncelle" Grid.ColumnSpan="1" Margin="1,175,184,-201" Grid.Row="4" Grid.Column="1" Grid.RowSpan="3" RenderTransformOrigin="0.5,0.5" >
-
-                    </Button>
+                    <Button Command="{Binding UpdateMusteriCommand }" Content="Müşteriyi Güncelle"  Margin="95,163,117,-189" Grid.Row="5" Grid.ColumnSpan="2"/>
 
 
                 </Grid>
