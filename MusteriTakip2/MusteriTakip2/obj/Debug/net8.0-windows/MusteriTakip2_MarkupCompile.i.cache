@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\elfay\Desktop\wpf uygulamaları\Musteritakip\MusteriTakip2\MusteriTakip2\obj\Debug\
+C:\Users\elfay\Desktop\wpf uygulamaları\Musteritakip\MusteriTakip2\MusteriTakip2\obj\Debug\net8.0-windows\
 MusteriTakip2
 none
 false
-DEBUG;TRACE
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\elfay\Desktop\wpf uygulamaları\Musteritakip\MusteriTakip2\MusteriTakip2\App.xaml
-372459448
-5402863401
-14-579869471
-134-1205656819
+3652718064
+2-1415765458
+13580805172
+206569101146
 MainWindow.xaml;Views\Musteriler.xaml;Views\Updatepencere.xaml;
 
-True
+False
 

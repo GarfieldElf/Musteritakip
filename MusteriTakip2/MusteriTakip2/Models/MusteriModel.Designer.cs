@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\elfay\Desktop\wpf uygulamaları\MusteriTakip2\MusteriTakip2\Models\MusteriModel.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\elfay\Desktop\wpf uygulamaları\Musteritakip\MusteriTakip2\MusteriTakip2\Models\MusteriModel.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
