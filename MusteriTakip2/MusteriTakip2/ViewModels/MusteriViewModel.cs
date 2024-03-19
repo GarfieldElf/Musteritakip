@@ -59,14 +59,13 @@ namespace MusteriTakip2.ViewModels
             get { return filteredMusteri; }
             set 
             {
-               filteredMusteri = value; OnPropertyChanged(nameof(filteredMusteri));
-               // MusteriCollection.Filter = FilterMusteribyName;
+               filteredMusteri = value; OnPropertyChanged(nameof(FilteredMusteri));
+               MusteriCollection.Filter = FilterMusteribyName;
                                    
             }
         }
 
         private ICollectionView _mustericollection;
-
         public ICollectionView MusteriCollection
         {
             get { return _mustericollection; }
@@ -75,28 +74,34 @@ namespace MusteriTakip2.ViewModels
 
 
 
-
         MusteriEntities musterientities;
 
         public MusteriViewModel()
+
         {
-            MusteriCollection = CollectionViewSource.GetDefaultView(LstMusteri);
+
             musterientities = new MusteriEntities();
-        
+            LoadMusteri();
+            MusteriCollection = CollectionViewSource.GetDefaultView(LstMusteri);
+            MusteriCollection.Filter = FilterMusteribyName;
+
             DeleteCommand = new Command((s) => true, Delete);
             AddMusteriCommand = new Command((s) => true, AddMusterii);
             UpdateCommand = new Command((s) => true, Update);
             UpdateMusteriCommand = new Command((s) => true, UpdateMusteri);
 
-            // MusteriCollection.Filter = FilterMusteribyName;
-
-            LoadMusteri();
         }
 
         private bool FilterMusteribyName(object mstr) //!!!!
         {
-            var mstrdetay = mstr as Musteriler;
-            return mstrdetay != null && mstrdetay.MusteriAdi.Contains(FilteredMusteri);
+            if (!string.IsNullOrEmpty(FilteredMusteri))
+            {
+                var mstrdetay = mstr as Musteriler;
+                return mstrdetay != null && mstrdetay.MusteriAdi.Contains(FilteredMusteri);
+
+            }
+
+            return true;
            
         }
 

@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|c:\\users\\elfay\\desktop\\wpf uygulamalar\u0131\\musteritakip\\musteritakip2\\musteritakip2\\viewmodels\\musteriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|solutionrelative:musteritakip2\\viewmodels\\musteriviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|c:\\users\\elfay\\desktop\\wpf uygulamalar\u0131\\musteritakip\\musteritakip2\\musteritakip2\\views\\musteriler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|solutionrelative:musteritakip2\\views\\musteriler.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|c:\\users\\elfay\\desktop\\wpf uygulamalar\u0131\\musteritakip\\musteritakip2\\musteritakip2\\views\\musteriler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0225BCD2-9A64-4BC3-B07A-2A0143D39179}|MusteriTakip2\\MusteriTakip2.csproj|solutionrelative:musteritakip2\\views\\musteriler.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Musteriler.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\Views\\Musteriler.xaml.cs",
+              "RelativeDocumentMoniker": "MusteriTakip2\\Views\\Musteriler.xaml.cs",
+              "ToolTip": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\Views\\Musteriler.xaml.cs",
+              "RelativeToolTip": "MusteriTakip2\\Views\\Musteriler.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwBoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T20:44:24.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MusteriViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\ViewModels\\MusteriViewModel.cs",
+              "RelativeDocumentMoniker": "MusteriTakip2\\ViewModels\\MusteriViewModel.cs",
+              "ToolTip": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\ViewModels\\MusteriViewModel.cs",
+              "RelativeToolTip": "MusteriTakip2\\ViewModels\\MusteriViewModel.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAjwGUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T20:34:34.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Musteriler.xaml",
+              "DocumentMoniker": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\Views\\Musteriler.xaml",
+              "RelativeDocumentMoniker": "MusteriTakip2\\Views\\Musteriler.xaml",
+              "ToolTip": "C:\\Users\\elfay\\Desktop\\wpf uygulamalar\u0131\\Musteritakip\\MusteriTakip2\\MusteriTakip2\\Views\\Musteriler.xaml",
+              "RelativeToolTip": "MusteriTakip2\\Views\\Musteriler.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-19T20:30:29.874Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

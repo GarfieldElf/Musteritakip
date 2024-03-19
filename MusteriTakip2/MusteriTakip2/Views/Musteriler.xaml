@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Musteriler" Height="450" Width="800" WindowState="Maximized">
     <Grid>
-        <ListView Grid.Row="1" ItemsSource="{Binding LstMusteri }">
+        <ListView Grid.Row="1" ItemsSource="{Binding MusteriCollection }">
             <ListView.View>
                 <GridView>
                     <GridView.Columns>
